@@ -1,0 +1,58 @@
+.managment {
+    width: 100%;
+    padding-block: 94px;
+
+    &-content {
+        gap: 60px;
+
+        &_info {
+            max-width: 445px;
+            width: 100%;
+        }
+    }
+
+    .content-info {
+        &_title {
+            @include title;
+            margin-bottom: 42px;
+        }
+
+        &_text, &_link {
+            color: $dark;
+            text-align: justify;
+            font-family: $LR;
+            font-size: $sm;
+            line-height: 140%;
+            margin-bottom: 16px;
+        }
+
+        &_link {
+            color: $primary;
+            margin-bottom: 0;
+        }
+    }
+
+    &-media {
+        max-width: 445px;
+        width: 100%;
+        position: relative;
+
+        &_img {
+            width: 100%;
+            display: block;
+        }
+
+        &_link {
+            position: absolute;
+            top: 50%;
+            left: -33px;
+            width: 66px;
+            height: 66px;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background-color: $primary;
+            padding: 24px;
+            display: block;
+        }
+    }
+}

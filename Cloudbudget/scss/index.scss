@@ -1,0 +1,12 @@
+@import "./fonts/fonts";
+@import "./variable/root";
+@import "./mixins/mixins";
+@import "./settings/settings";
+
+// Components
+
+@import "./components/header";
+@import "./components/banner";
+@import "./components/managment";
+@import "./components/featuress";
+@import "./components/technology";

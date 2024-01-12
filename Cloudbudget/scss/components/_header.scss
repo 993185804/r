@@ -1,0 +1,59 @@
+.header {
+    width: 100%;
+    padding-block: 35px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 3;
+
+    &-content {
+        @include flexBetween;
+
+        &_logo {
+            color: $light;
+            font-family: $LB;
+            font-size: $md;
+            @include flexCenter;
+            gap: 8px;
+        }
+
+        &_nav {
+            @include flexCenter;
+            gap: 20px;
+
+            &-link {
+                color: $light;
+                font-family: $LB;
+                font-size: $sm;
+            }
+        }
+
+        &_actions {
+            @include flexCenter;
+            gap: 20px;
+
+            &-language {
+                @include flexCenter;
+                gap: 10px;
+                color: $light;
+                font-family: $LR;
+                font-size: $sm;
+                cursor: pointer;
+            }
+
+            &-login {
+                color: $light;
+                font-family: $LR;
+                text-transform: uppercase;
+                font-size: $sm;
+                border-radius: 6px;
+                border: 1px solid $light;
+                transition: $transition;
+
+                &:hover {
+                    scale: 1.1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
